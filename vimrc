@@ -28,6 +28,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'Yggdroot/indentLine'
 
+Plugin 'mindriot101/vim-yapf'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 call glaive#Install()        " enable this line after the installation of glaive
@@ -73,6 +75,7 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
+let g:yapf_style = "google"
 
 " autoformat
 augroup autoformat_settings
